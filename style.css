@@ -116,14 +116,27 @@ main{
     opacity: 0;
     background-color: var(--cyan);
     border-radius: 10px;
+    transition: 1s ease;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#view{
+    position: absolute;
+    top:8rem;
+    left:8rem;
+    display: none;
+
+}
+
 .container:hover .overlay{
-    opacity: 0.8;
+    opacity: 0.5;
+}
+
+.container:hover #view{
+    display: block;
 }
 
 @media screen and (min-width:600px) {
